@@ -2,12 +2,6 @@
     box-sizing: border-box;
 }
 
-.row::after {
-    content: "";
-    clear: both;
-    display: table;
-}
-
 body {
     background-color: #eee;
     direction: rtl;
@@ -50,31 +44,111 @@ nav > ul > li > a {
     position: absolute;
 }
   
-  .menuItem:hover > a {
+.menuItem:hover > a {
     color: darkblue;
     display: block;
     text-decoration: underline;
-  }
+}
 
-  .dropDownMenu:hover > .dropDownContent {
+.dropDownMenu:hover > .dropDownContent {
     color: darkblue;
     display: block;
     background-color: #444;
-  }
+    z-index: 800;
+}
   
-  nav.dropDownContent > ul > li > a:hover {
+nav.dropDownContent > ul > li > a:hover {
     color: darkblue;
     display: block;
-  }
+}
 
-  nav.dropDownContent > ul > li {
+nav.dropDownContent > ul > li {
     display: block;
   }
 
 .topNav {
     background: #444 url() repeat-x center top;
+    height: 120px;
 }
 
-.bottomMenu {
+#pazLogoo {
+    width: 50px;
+}
+
+footer {
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+}
+
+.bottomNav {
     position: relative;
+    background: #444 url() repeat-x center top;
+}
+
+.bottomMenu:hover > a {
+    text-decoration: underline;
+    color: darkblue;
+    display: block;
+}
+
+main {
+    width: 900px;
+    position: relative;
+    margin: auto;
+}
+
+.row {
+    display: block;
+    height: 200px;
+}
+
+.row::after {
+    content: "xx";
+    clear: both;
+    display: table;
+}
+
+.column {
+    position: relative;
+    float: right;
+    width: 280px;
+    height: 350px;
+    margin: 10px;
+    background-color: pink;
+}
+
+.itemImage {
+    width: 100%;
+}
+
+.itemText {
+    background-color: red;
+    width: 200px;
+    height: 100px;
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+}
+
+.itemTitle {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    z-index: 200;
+    font-style: italic;
+}
+
+.itemDesc {
+    position: absolute;
+    top: 20px;
+    right: 0px;
+    z-index: 200;
+}
+
+.itemReadMore {
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    z-index: 200;
 }

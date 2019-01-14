@@ -7,15 +7,14 @@
 
 <body onload="onLoad()">
     <nav class="topNav">
-        <div><a href="#"><img src="images\paz_logo.png" /></a></div>
         <ul>
-            <li class="menuItem"><a href="#"><img src="images\menu_home.png" id="homeImage" />a</a></li>
+            <li class="menuItem"><a href="#"><img id="pazLogo" src="images\paz_logo.png" /></a></li>
+            <li class="menuItem"><a href="#"><img src="images\menu_home.png" id="homeImage" /></a></li>
             <li class="menuSeparator">|</li>
             <li class="dropDownMenu menuItem"><a href="#"><span class="menuItem">אודות</span></a>
                 <nav class="dropDownContent">
                     <ul>
-                        <!--image sprite-->
-                        <!--horizontal menu-->
+                        <li class="menuItem"><a href="#"><span class="menuItem">אודות</span></a></li>
                         <li class="menuItem"><a href="#"><span class="menuItem">אודות</span></a></li>
                         <li class="menuItem"><a href="#"><span class="menuItem">אודות</span></a></li>
                         <li class="menuItem"><a href="#"><span class="menuItem">אודות</span></a></li>
@@ -24,14 +23,14 @@
             </li>
             <li class="menuSeparator">|</li>
             <li class="dropDownMenu menuItem"><a href="#"><span class="menuItem">חטיבות</span></a>
-                    <nav class="dropDownContent">
-                        <ul>
-                            <li class="menuItem"><a href="#"><span class="menuItem">חטיבות</span></a></li>
-                            <li class="menuItem"><a href="#"><span class="menuItem">חטיבות</span></a></li>
-                            <li class="menuItem"><a href="#"><span class="menuItem">חטיבות</span></a></li>
-                            <li class="menuItem"><a href="#"><span class="menuItem">חטיבות</span></a></li>
-                        </ul>
-                    </nav>
+                <nav class="dropDownContent">
+                    <ul>
+                        <li class="menuItem"><a href="#"><span class="menuItem">חטיבות</span></a></li>
+                        <li class="menuItem"><a href="#"><span class="menuItem">חטיבות</span></a></li>
+                        <li class="menuItem"><a href="#"><span class="menuItem">חטיבות</span></a></li>
+                        <li class="menuItem"><a href="#"><span class="menuItem">חטיבות</span></a></li>
+                    </ul>
+                </nav>
             </li>
             <li class="menuSeparator">|</li>
             <li class="dropDownMenu menuItem"><a href="#"><span class="menuItem">אחריות תאגידית</span></a></li>
@@ -47,54 +46,66 @@
     </nav>
     <main>
         <div class="row">
-            <div class="column imageItem">
-                <img src="images\1908364606615453350.jpg" />
-                <span class="itemTitle">קמעונות ומסחר</span>
-                <span class="itemDesc">במסגרת חטיבת הקו"מ של פז מתבצעת הפעילות הקמעונאית, הנדל"נית, והשיווקית של
-                    הקבוצה, שמתאפיינת בחדשנות, יעילות ומובילות. החטיבה פועלת...</span>
-                <span class="itemReadMore"><a href="">קרא עוד</a></span>
+            <div class="column">
+                <img class="itemImage" src="images\1908364606615453350.jpg" />
+                <div class="itemText">
+                    <span class="itemTitle">קמעונות ומסחר</span>
+                    <span class="itemDesc">במסגרת חטיבת הקו"מ של פז מתבצעת הפעילות הקמעונאית, הנדל"נית, והשיווקית של
+                        הקבוצה, שמתאפיינת בחדשנות, יעילות ומובילות. החטיבה פועלת...</span>
+                    <span class="itemReadMore"><a href="">קרא עוד</a></span>
+                </div>
             </div>
-            <div class="column imageItem">
-                <img src="images\Picture-046410251500.jpg" />
-                <span class="itemTitle">קמעונות ומסחר</span>
-                <span class="itemDesc">במסגרת חטיבת הקו"מ של פז מתבצעת הפעילות הקמעונאית, הנדל"נית, והשיווקית של
-                    הקבוצה, שמתאפיינת בחדשנות, יעילות ומובילות. החטיבה פועלת...</span>
-                <span class="itemReadMore"><a href="">קרא עוד</a></span>
+            <div class="column">
+                <img class="itemImage" src="images\Picture-046410251500.jpg" />
+                <div class="itemText">
+                    <span class="itemTitle">זיקוק</span>
+                    <span class="itemDesc">במסגרת חטיבת הקו"מ של פז מתבצעת הפעילות הקמעונאית, הנדל"נית, והשיווקית של
+                        הקבוצה, שמתאפיינת בחדשנות, יעילות ומובילות. החטיבה פועלת...</span>
+                    <span class="itemReadMore"><a href="">קרא עוד</a></span>
+                </div>
             </div>
-            <div class="column imageItem">
-                <img src="images\פזקר_-291_354410564000.jpg" />
-                <span class="itemTitle">קמעונות ומסחר</span>
-                <span class="itemDesc">במסגרת חטיבת הקו"מ של פז מתבצעת הפעילות הקמעונאית, הנדל"נית, והשיווקית של
-                    הקבוצה, שמתאפיינת בחדשנות, יעילות ומובילות. החטיבה פועלת...</span>
-                <span class="itemReadMore"><a href="">קרא עוד</a></span>
+            <div class="column">
+                <img class="itemImage" src="images\פזקר_-291_354410564000.jpg" />
+                <div class="itemText">
+                    <span class="itemTitle">תעשיות ומסחר</span>
+                    <span class="itemDesc">במסגרת חטיבת הקו"מ של פז מתבצעת הפעילות הקמעונאית, הנדל"נית, והשיווקית של
+                        הקבוצה, שמתאפיינת בחדשנות, יעילות ומובילות. החטיבה פועלת...</span>
+                    <span class="itemReadMore"><a href="">קרא עוד</a></span>
+                </div>
             </div>
         </div>
         <div class="row">
-            <div class="column imageItem">
-                <img src="images\paz_250x110059890678.jpg" />
-                <span class="itemTitle">קמעונות ומסחר</span>
-                <span class="itemDesc">במסגרת חטיבת הקו"מ של פז מתבצעת הפעילות הקמעונאית, הנדל"נית, והשיווקית של
-                    הקבוצה, שמתאפיינת בחדשנות, יעילות ומובילות. החטיבה פועלת...</span>
-                <span class="itemReadMore"><a href="">קרא עוד</a></span>
+            <div class="column">
+                <img class="itemImage" src="images\paz_250x110059890678.jpg" />
+                <div class="itemText">
+                    <span class="itemTitle">כרטיס אשראי שופרסל וכרטיס אשראי יש</span>
+                    <span class="itemDesc">במסגרת חטיבת הקו"מ של פז מתבצעת הפעילות הקמעונאית, הנדל"נית, והשיווקית של
+                        הקבוצה, שמתאפיינת בחדשנות, יעילות ומובילות. החטיבה פועלת...</span>
+                    <span class="itemReadMore"><a href="">קרא עוד</a></span>
+                </div>
             </div>
-            <div class="column imageItem">
-                <img src="images\banner_atar.jpg" />
-                <span class="itemTitle">קמעונות ומסחר</span>
-                <span class="itemDesc">במסגרת חטיבת הקו"מ של פז מתבצעת הפעילות הקמעונאית, הנדל"נית, והשיווקית של
-                    הקבוצה, שמתאפיינת בחדשנות, יעילות ומובילות. החטיבה פועלת...</span>
-                <span class="itemReadMore"><a href="">קרא עוד</a></span>
+            <div class="column">
+                <img class="itemImage" src="images\banner_atar.jpg" />
+                <div class="itemText">
+                    <span class="itemTitle">מכונת קפה LAVAZZA</span>
+                    <span class="itemDesc">במסגרת חטיבת הקו"מ של פז מתבצעת הפעילות הקמעונאית, הנדל"נית, והשיווקית של
+                        הקבוצה, שמתאפיינת בחדשנות, יעילות ומובילות. החטיבה פועלת...</span>
+                    <span class="itemReadMore"><a href="">קרא עוד</a></span>
+                </div>
             </div>
-            <div class="column imageItem">
-                <img src="images\Untitled-3058756287.jpg" />
-                <span class="itemTitle">קמעונות ומסחר</span>
-                <span class="itemDesc">במסגרת חטיבת הקו"מ של פז מתבצעת הפעילות הקמעונאית, הנדל"נית, והשיווקית של
-                    הקבוצה, שמתאפיינת בחדשנות, יעילות ומובילות. החטיבה פועלת...</span>
-                <span class="itemReadMore"><a href="">קרא עוד</a></span>
+            <div class="column">
+                <img class="itemImage" src="images\Untitled-3058756287.jpg" />
+                <div class="itemText">
+                    <span class="itemTitle">התחנות שלנו בדרך שלך</span>
+                    <span class="itemDesc">במסגרת חטיבת הקו"מ של פז מתבצעת הפעילות הקמעונאית, הנדל"נית, והשיווקית של
+                        הקבוצה, שמתאפיינת בחדשנות, יעילות ומובילות. החטיבה פועלת...</span>
+                    <span class="itemReadMore"><a href="">קרא עוד</a></span>
+                </div>
             </div>
         </div>
     </main>
-    <bottom>
-        <nav>
+    <footer>
+        <nav class="bottomNav">
             <ul>
                 <li class="bottomMenu"><a href="#">F</a></li>
                 <li>|</li>
@@ -115,7 +126,7 @@
                 <li class="bottomMenu"><a href="#">צור קשר</a></li>
             </ul>
         </nav>
-    </bottom>
+    </footer>
 </body>
 
 </html>
