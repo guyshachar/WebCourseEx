@@ -25,6 +25,7 @@ nav > ul > li {
     display: inline-block;
     padding: 0;
     margin: 0;
+    z-index: 1000;
 }
 
 nav > ul > li > a {
@@ -54,7 +55,6 @@ nav > ul > li > a {
     color: darkblue;
     display: block;
     background-color: #444;
-    z-index: 800;
 }
   
 nav.dropDownContent > ul > li > a:hover {
@@ -75,80 +75,178 @@ nav.dropDownContent > ul > li {
     width: 50px;
 }
 
+main {
+    width: 900px;
+    position: relative;
+    margin: auto;
+    /*display: none;*/
+}
+
+.row::after {
+    content: "";
+    clear: both;
+
+
+    display: table;
+}
+
+div.topColumn {
+    position: relative;
+    float: right;
+    width: 293px;
+    height: 355px;
+    margin: 3px;
+}
+
+.topColumn > .itemImage {
+    width: 100%;
+}
+
+.topColumn > .itemText {
+    background-color: #666;
+    width: 248px;
+    height: 97px;
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    border-radius: 0px 0px 30px 0px;
+}
+
+.topColumn > .itemText > .itemTitle {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    z-index: 200;
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.topColumn > .itemText > .itemDesc {
+    position: absolute;
+    z-index: 200;
+    font-size: 13px;
+    margin-top: 14px;
+    color: #fff;
+}
+
+.topColumn > .itemText > .itemReadMore {
+    position: absolute;
+    bottom: 10px;
+    left: 5px;
+    color: #fff;
+    font-size: 13px;
+    z-index: 200;
+}
+
+.topColumn > .itemText > a.itemReadMore {
+    background: url("images\read_more_yellow.png") no-repeat left bottom;
+}
+
+div.bottomColumn {
+    position: relative;
+    float: right;
+    width: 293px;
+    height: 216px;
+    margin: 3px;
+    background-color: #DDD;
+    border-radius: 0px 20px 0px 0px;
+}
+
+.bottomColumn > .itemTitle {
+    position: absolute;
+    top: 0px;
+    right: 10px;
+    z-index: 200;
+    font-size: 14px;
+    font-weight: bold;
+    color: black;
+    display: block;
+    text-decoration: underline;
+}
+
+.bottomColumn > .itemImage {
+    margin-top: 20px;
+    margin-right: 20px; 
+    display: block;
+}
+
+.cardImg {
+    width: 250px;
+    height: 110px;
+    margin: auto;
+}
+
+.mapImg {
+    width: 74px;
+    height: 168px;
+    float: left;
+}
+
+.bottomColumn > .itemReadMore {
+    position: absolute;
+    bottom: 10px;
+    left: 5px;
+    color: black;
+    font-size: 13px;
+    z-index: 200;
+}
+
+div.mapItem {
+    margin-top: 20px;
+    display: block;
+}
+
+div.mapItem > img {
+    float: left;
+}
+
+div.mapItem > div {
+    float: right;
+}
+
+a.mapItem {
+    display: block;
+    font-size: 13px;
+    text-decoration: underline;
+    color: black;
+    background: url("images\read_more_yellow.png") no-repeat left center;
+}
+
 footer {
     position: fixed;
     bottom: 0px;
     width: 100%;
+    margin: 0;
 }
 
 .bottomNav {
-    position: relative;
     background: #444 url() repeat-x center top;
+}
+
+nav.bottomNav > ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav.bottomNav > ul > li {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    z-index: 1000;
+}
+
+.bottomNav > ul > li > a {
+    text-decoration: none;
+    color: red;
+    padding: 1px;
+    display: inline-block;
+   
 }
 
 .bottomMenu:hover > a {
     text-decoration: underline;
     color: darkblue;
     display: block;
-}
-
-main {
-    width: 900px;
-    position: relative;
-    margin: auto;
-}
-
-.row {
-    display: block;
-    height: 200px;
-}
-
-.row::after {
-    content: "xx";
-    clear: both;
-    display: table;
-}
-
-.column {
-    position: relative;
-    float: right;
-    width: 280px;
-    height: 350px;
-    margin: 10px;
-    background-color: pink;
-}
-
-.itemImage {
-    width: 100%;
-}
-
-.itemText {
-    background-color: red;
-    width: 200px;
-    height: 100px;
-    position: absolute;
-    bottom: 5px;
-    right: 5px;
-}
-
-.itemTitle {
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    z-index: 200;
-    font-style: italic;
-}
-
-.itemDesc {
-    position: absolute;
-    top: 20px;
-    right: 0px;
-    z-index: 200;
-}
-
-.itemReadMore {
-    position: absolute;
-    bottom: -10px;
-    left: 0;
-    z-index: 200;
 }
