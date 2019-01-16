@@ -14,7 +14,7 @@ body {
 }
 
 body > .topNav {
-    height: 120px;
+    height: 105px;
     position: relative;
     top: 0px;
 }
@@ -50,7 +50,7 @@ li.homeImage {
 a.homeImage {
     width: 15px;
     height: 15px;
-    background: url("/images/menu_home.png") no-repeat -15px 0;
+    background: url("images\menu_home.png") no-repeat -15px 0;
     z-index: 1000;
 }
 
@@ -290,3 +290,8 @@ nav.bottomNav > ul > li {
     display: block;
 }
 
+.bottomImage > img {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+}
