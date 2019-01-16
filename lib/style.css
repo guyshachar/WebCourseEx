@@ -7,17 +7,10 @@ body {
     direction: rtl;
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
-    background: url("images/menu_home.png") no-repeat 0 top;
-}
-
-.homeImage {
-    width: 17px;
-    background: url("images/menu_home.png") no-repeat 0 top;
-    z-index: 1000;
 }
 
 .topNav {
-    background: #444 url() repeat-x center top;
+    background: rgb(144, 144, 144) url() repeat-x center top;
 }
 
 body > .topNav {
@@ -47,6 +40,37 @@ body > .topNav > ul {
     color: white;
     padding: 15px;
     display: inline-block;
+}
+
+li.homeImage {
+    position: relative;
+    top: 15px;
+}
+
+a.homeImage {
+    width: 15px;
+    height: 15px;
+    background: url("/images/menu_home.png") no-repeat -15px 0;
+    z-index: 1000;
+}
+
+div.searchText {
+    position: absolute;
+    top: 20px;
+    left: 70px;
+}
+
+.searchText > a {
+    float: right;
+    margin-left: 10px;
+}
+
+.searchText > input {
+    float: right;
+}
+
+.searchText > img {
+    float: right;
 }
 
 .dropDownMenu {
@@ -233,7 +257,7 @@ footer {
 }
 
 .bottomNav {
-    background: #444 url() repeat-x center top;
+    background: rgb(144, 144, 144);
 }
 
 nav.bottomNav > ul {
