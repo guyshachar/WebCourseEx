@@ -246,7 +246,7 @@ a.mapItem {
     font-size: 13px;
     text-decoration: underline;
     color: black;
-    background: url("images\read_more_yellow.png") no-repeat left center;
+    background: url("images/read_more_yellow.png") no-repeat 0 0;
 }
 
 footer {
@@ -294,4 +294,15 @@ nav.bottomNav > ul > li {
     position: absolute;
     top: 10px;
     left: 20px;
+}
+
+div.logo {
+    position: absolute;
+    top: 10px;
+    left: 70px;
+}
+
+img.logo {
+    width: 135px;
+    height: 18px;
 }
